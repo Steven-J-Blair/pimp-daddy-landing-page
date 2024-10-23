@@ -92,7 +92,7 @@ body{
 }
 
 #scroll-down {
-  position: absolute;
+  position: static;
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
