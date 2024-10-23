@@ -77,7 +77,7 @@ body{
 }
 
 /*BLOG BEGINS*/
-.blog-container {
+#blog-container {
   width: 500px;
   height: 300px; /* Adjust as needed */
   margin-bottom: 20px;
@@ -88,7 +88,7 @@ body{
   overflow: hidden;
 }
 
-.scroll-down {
+#scroll-down {
   position: absolute;
   bottom: 10px;
   left: 50%;
