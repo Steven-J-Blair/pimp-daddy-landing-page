@@ -80,11 +80,11 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 #blog-container {
-  width: 495px;
-  height: 395px; /* Adjust as needed */
+  width: 490px;
+  height: 290px; /* Adjust as needed */
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #89019e;
+  border: 1px solid #66ff00;
   font-family: "Cascadia Code", "Fira Code", monospace;
   background-color: antiquewhite;
   color: black;
