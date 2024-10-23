@@ -79,6 +79,7 @@ body{
 .blog-container {
   width: 500px;
   height: 300px; /* Adjust as needed */
+  border: 1px solid #ddd;
   overflow: hidden;
 }
 
@@ -99,9 +100,9 @@ body{
 
 .blog-post {
   width: 500px;
+  height: 300;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ddd;
 }
 .blog-post h2 {
   margin-top: 0;
