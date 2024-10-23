@@ -77,8 +77,8 @@ body{
 }
 
 .blog-post {
-  max-width: 500px;
-  max-height: 300px;
+  width: 500px;
+  height: 300px;
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -87,6 +87,6 @@ body{
   margin-top: 0;
 }
 .blog-post .date {
-  font-style: italic;
+  font-family: "Cascadia Code", "Fira Code", monospace;
   color: #666;
 }
