@@ -80,6 +80,8 @@ body{
 .blog-container {
   width: 500px;
   height: 300px; /* Adjust as needed */
+  margin-bottom: 20px;
+  padding: 10px;
   border: 1px solid #89019e;
   background-color: antiquewhite;
   color: black;
@@ -95,15 +97,6 @@ body{
   border: none;
   font-size: 24px;
   cursor: pointer;
-}
-
-.blog-post {
-  width: 498px;
-  height: 298px;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: antiquewhite;
-  color: black;
 }
 
 .blog-post h2 {
