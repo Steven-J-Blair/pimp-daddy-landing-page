@@ -77,6 +77,8 @@ body{
 }
 
 .blog-post {
+  max-width: 500px;
+  max-height: 300px;
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
