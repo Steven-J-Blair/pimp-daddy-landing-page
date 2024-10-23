@@ -82,8 +82,8 @@ body{
 #blog-container {
   width: 490px;
   height: 290px; /* Adjust as needed */
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
   border: 1px solid #66ff00;
   font-family: "Cascadia Code", "Fira Code", monospace;
   background-color: antiquewhite;
