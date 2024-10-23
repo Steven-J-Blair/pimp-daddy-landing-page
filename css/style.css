@@ -76,18 +76,17 @@ body{
   color: white;
 }
 
-#blog-container {
-  position: relative;
+.blog-container {
   width: 500px;
   height: 300px; /* Adjust as needed */
   overflow: hidden;
 }
 
-#current-post {
+.current-post {
   padding: 20px;
 }
 
-#scroll-down {
+.scroll-down {
   position: absolute;
   bottom: 10px;
   left: 50%;
