@@ -80,11 +80,9 @@ body{
   width: 500px;
   height: 300px; /* Adjust as needed */
   border: 1px solid #89019e;
+  background-color: antiquewhite;
+  color: black;
   overflow: hidden;
-}
-
-.current-post {
-  padding: 20px;
 }
 
 .scroll-down {
@@ -103,8 +101,6 @@ body{
   height: 300;
   margin-bottom: 20px;
   padding: 10px;
-  background-color: antiquewhite;
-  color: black;
 }
 .blog-post h2 {
   margin-top: 0;
