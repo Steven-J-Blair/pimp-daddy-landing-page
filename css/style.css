@@ -75,3 +75,16 @@ body{
   background-color: black;
   color: white;
 }
+
+.blog-post {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.blog-post h2 {
+  margin-top: 0;
+}
+.blog-post .date {
+  font-style: italic;
+  color: #666;
+}

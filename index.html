@@ -72,16 +72,31 @@
     </script>
 
 
-<center><h2>YO PEEPS!</h2></center>
+<center><h2>YO PEEPS!</h2><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sjblair" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script><h4>🤘 😎 😝 </h4></center>
 
-<center><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sjblair" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></center>
-
-<center><h4>🤘 😎 😝 </h4></center>
+<center><div id="blog-container"></div></center>
 
 <center><div class="grid-container-top"></div>
   <div class="grid-item-1"><a href="https://cash.app/$SJosiah100" target= "_blank"><img src="https://cash.app/qr/$SJosiah100?size=288&margin=0" width="100" height="100"></a></div>
 </div></center>
 
+<script>
+  fetch('blog-posts.json')
+  .then(response => response.json())
+  .then(posts => {
+    const blogContainer = document.getElementById('blog-container');
+    posts.forEach(post => {
+      const postElement = document.createElement('div');
+      postElement.classList.add('blog-post');
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p class="date">${post.date}</p>
+        <div class="content">${post.content}</div>
+      `;
+      blogContainer.appendChild(postElement);
+    });
+  });
+</script>
 </body>
 
 <center><footer>Copyright &copy; 2023 "S.J. Blair's [P.D.L.P.]" All Rights Reserved.</footer></center>
