@@ -91,6 +91,10 @@ body{
   overflow: hidden;
 }
 
+#blog-container-footer {
+  align-self: baseline;
+}
+
 #scroll-down {
   position: absolute;
   bottom: auto;
