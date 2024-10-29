@@ -78,6 +78,7 @@
     </script>
 
 <center><div id="blog-container">
+  <div id="static-link-container"></div>
   <div id="current-post"></div>
   <button id="scroll-down">▼</button>
 </div>
@@ -110,7 +111,7 @@ document.getElementById('static-link-container').appendChild(staticLinkElement);
   
   postElement.innerHTML = `
     <div class="post-header">
-      <h2>${post.title}</h2>
+      <h5>${post.title}</h5>
       <span class="date">${post.date}</span>
     </div>
     <div class="content">${sanitizedContent}</div>
