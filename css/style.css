@@ -99,7 +99,7 @@ body{
 .post-header {
   display: inline-flex;
   justify-content: space-between;
-  align-items: normald;
+  align-items: normal;
   margin-bottom: 5px;
 }
 
