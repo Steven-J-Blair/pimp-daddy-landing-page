@@ -8,7 +8,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="css/style.css">
  <link rel="icon" type="img/jpg" href="images/degenback.jpg" />
- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
 </head>
 
 <body>
@@ -92,18 +93,22 @@ fetch('blog-posts.json')
     posts = data;
     displayPost(currentIndex);
   });
+  const converter = new showdown.Converter();
 
 function displayPost(index) {
   const post = posts[index];
   const postElement = document.getElementById('current-post');
   
-  // Use marked to convert Markdown to HTML
+  // Convert Markdown to HTML, then sanitize
+  const htmlContent = converter.makeHtml(post.content);
+  const sanitizedContent = DOMPurify.sanitize(htmlContent);
+  
   postElement.innerHTML = `
     <div class="post-header">
-      <h5>${post.title}</h5>
+      <h2>${post.title}</h2>
       <span class="date">${post.date}</span>
     </div>
-    <div class="content">${marked(post.content)}</div>
+    <div class="content">${sanitizedContent}</div>
   `;
 }
 
