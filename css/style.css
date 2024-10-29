@@ -82,6 +82,8 @@ body{
   #blog-container {
     width: 90%;
     margin: 0 auto;
+    position: relative;
+    padding-bottom: 40px;
   }
 
   #current-post {
@@ -96,8 +98,6 @@ body{
 #blog-container {
   width: 498px;
   height: 250px; /* Adjust as needed */
-  margin-bottom: 0px;
-  margin-top: 0px;
   border: 1px solid #c0c0c0;
   font-family: "Roboto Mono", monospace;
   background-color: antiquewhite;
@@ -142,11 +142,6 @@ body{
   font-size: 16px;
   cursor: pointer;
   z-index: 10;
-}
-
-#blog-container {
-  position: relative;
-  padding-bottom: 40px; /* Add some padding at the bottom to accommodate the arrow */
 }
 
 /* customizing the bullet points in the markdown */
