@@ -81,7 +81,7 @@ body{
 
 #blog-container {
   width: 498px;
-  height: 260px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
   margin-bottom: 5px;
   margin-top: 5px;
   border: 1px solid #c0c0c0;
@@ -99,7 +99,7 @@ body{
 .post-header {
   display: inline-flex;
   justify-content: space-between;
-  align-items: normal;
+  align-items: normald;
   margin-bottom: 5px;
 }
 
@@ -120,7 +120,7 @@ body{
 
 #scroll-down {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
