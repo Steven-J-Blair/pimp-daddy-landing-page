@@ -57,7 +57,7 @@ function displayPost(index) {
         <span class="date">${post.date}</span>
       </div>
       <div class="content">${sanitizedContent}</div>
-    `;
+    </div>;
   }
 
 document.getElementById('scroll-down').addEventListener('click', () => {
