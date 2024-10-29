@@ -95,12 +95,13 @@ fetch('blog-posts.json')
 function displayPost(index) {
   const post = posts[index];
   const postElement = document.getElementById('current-post');
+  
+  // Use marked to convert Markdown to HTML
   postElement.innerHTML = `
     <div class="post-header">
       <h5>${post.title}</h5>
       <span class="date">${post.date}</span>
     </div>
-    <div class="content">${post.content}</div>
     <div class="content">${marked(post.content)}</div>
   `;
 }
