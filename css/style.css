@@ -77,7 +77,7 @@ body{
 }
 
 /*BLOG BEGINS*/
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 #blog-container {
   width: 498px;
@@ -85,7 +85,7 @@ body{
   margin-bottom: 5px;
   margin-top: 5px;
   border: 1px solid #c0c0c0;
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Mono", monospace;
   background-color: antiquewhite;
   color: black;
   overflow: hidden;
@@ -103,7 +103,7 @@ body{
   margin-bottom: 10px;
 }
 
-.post-header h3  {
+.post-header h5  {
   margin: 0;
   font-weight: bold;
 }
