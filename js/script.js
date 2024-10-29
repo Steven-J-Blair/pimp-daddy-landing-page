@@ -42,20 +42,23 @@ function displayStaticLink() {
 }
 
 function displayPost(index) {
-  const post = data.posts[index];
-  const postElement = document.getElementById('current-post');
-  
-  const htmlContent = converter.makeHtml(post.content);
-  const sanitizedContent = DOMPurify.sanitize(htmlContent);
-  
-  postElement.innerHTML = `
-    <div class="post-header">
-      <h4>${post.title}</h4>
-      <span class="date">${post.date}</span>
-    </div>
-    <div class="content">${sanitizedContent}</div>
-  `;
-}
+    const post = data.posts[index];
+    const postElement = document.getElementById('current-post');
+    
+    const htmlContent = converter.makeHtml(post.content);
+    const sanitizedContent = DOMPurify.sanitize(htmlContent, {
+      ALLOWED_TAGS: ['a', 'p', 'br', 'strong', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li'],
+      ALLOWED_ATTR: ['href', 'target']
+    });
+    
+    postElement.innerHTML = `
+      <div class="post-header">
+        <h5>${post.title}</h5>
+        <span class="date">${post.date}</span>
+      </div>
+      <div class="content">${sanitizedContent}</div>
+    `;
+  }
 
 document.getElementById('scroll-down').addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % data.posts.length;

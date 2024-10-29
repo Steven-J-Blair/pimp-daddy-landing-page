@@ -78,6 +78,20 @@ body{
 }
 
 /*BLOG BEGINS*/
+@media (max-width: 768px) {
+  #blog-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #current-post {
+    font-size: 14px;
+  }
+
+  .post-header h5 {
+    font-size: 18px;
+  }
+}
 
 #blog-container {
   width: 498px;
@@ -127,7 +141,12 @@ body{
   border: none;
   font-size: 16px;
   cursor: pointer;
-  padding: 5px;
+  z-index: 10;
+}
+
+#blog-container {
+  position: relative;
+  padding-bottom: 40px; /* Add some padding at the bottom to accommodate the arrow */
 }
 
 /* customizing the bullet points in the markdown */
