@@ -99,7 +99,7 @@ body{
 .post-header {
   display: inline-flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: normal;
   margin-bottom: 5px;
 }
 
@@ -114,8 +114,8 @@ body{
 }
 
 .content {
-  font-size: 0.9em;
-  line-height: 1.4;
+  font-size: 0.8em;
+  line-height: 1.1;
 }
 
 #scroll-down {
