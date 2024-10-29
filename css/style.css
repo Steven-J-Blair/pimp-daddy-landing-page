@@ -3,6 +3,7 @@ body{
   background-image: none;
   background-image: cover;
   background-repeat: no-repeat;
+  scroll-behavior: none;
   background-size: 100%;
   background-color: black;
   color: white;
