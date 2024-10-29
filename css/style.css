@@ -145,24 +145,3 @@ li {
   padding-left: 5px; /* Adjust this value to control space between bullet and text */
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li::before {
-  content: "•"; /* You can use any character or even an image here */
-  color: #000; /* Adjust color as needed */
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-ul {
-  list-style-position: outside;
-}
-
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-}
