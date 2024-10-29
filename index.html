@@ -95,19 +95,19 @@ fetch('blog-posts.json')
   });
   const converter = new showdown.Converter();
 
-function displayPost(index) {
+  function displayPost(index) {
   const post = posts[index];
   const postElement = document.getElementById('current-post');
   
-  // Convert Markdown to HTML, then sanitize
   const htmlContent = converter.makeHtml(post.content);
   const sanitizedContent = DOMPurify.sanitize(htmlContent);
   
   postElement.innerHTML = `
     <div class="post-header">
-      <h5>${post.title}</h5>
+      <h2>${post.title}</h2>
       <span class="date">${post.date}</span>
     </div>
+    <a href="${post.link || '#'}" class="post-link">Read more</a>
     <div class="content">${sanitizedContent}</div>
   `;
 }
