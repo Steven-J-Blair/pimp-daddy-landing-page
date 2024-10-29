@@ -103,7 +103,7 @@ body{
   margin-bottom: 5px;
 }
 
-.post-header h5  {
+.post-header h4  {
   margin: 0;
   font-weight: bold;
 }
@@ -156,5 +156,5 @@ li {
 }
 
 .post-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
