@@ -77,12 +77,12 @@
 
 <center><div id="blog-container">
   <div id="current-post"></div>
-  <button id="scroll-down">↓</button>
+  <button id="scroll-down">▼</button>
 </div>
 </center>
 
 <script>
-  let posts = [];
+let posts = [];
 let currentIndex = 0;
 
 fetch('blog-posts.json')
@@ -96,8 +96,10 @@ function displayPost(index) {
   const post = posts[index];
   const postElement = document.getElementById('current-post');
   postElement.innerHTML = `
-    <h2>${post.title}</h2>
-    <p class="date">${post.date}</p>
+    <div class="post-header">
+      <h2>${post.title}</h2>
+      <span class="date">${post.date}</span>
+    </div>
     <div class="content">${post.content}</div>
   `;
 }

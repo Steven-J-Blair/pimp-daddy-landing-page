@@ -91,22 +91,41 @@ body{
   overflow: hidden;
 }
 
+##current-post {
+  height: calc(100% - 30px); /* Adjust based on arrow size */
+  overflow-y: auto;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.post-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.date {
+  font-style: normal;
+  color: #666;
+}
+
+.content {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
 #scroll-down {
   position: absolute;
-  bottom: auto;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 16px;
   cursor: pointer;
-}
-
-.blog-post h2 {
-  margin-top: 0;
-}
-
-.blog-post .date {
-  font-family: "Cascadia Code", "Fira Code", monospace;
-  color: #666;
+  padding: 5px;
 }
