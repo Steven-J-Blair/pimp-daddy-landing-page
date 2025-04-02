@@ -12,77 +12,76 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
 </head>
 <body>
-    <center><h1>[P.D.L.P.]</h1></center>
-    <center><img src="images/degenback.jpg" width="500" height="280" alt="Degen background"></center>
-    <center><button id="myBtn">MY OPEN SOURCE REPOS</button></center>
-    <center><p id="static-link-container"></p></center>
-    
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <center>
-          <h2>FREE RESOURCES</h2>
-          </center>
+    <div id="main-container">
+        <!-- Header -->
+        <div id="main-header">
+            <h1>[P.D.L.P.]</h1>
         </div>
-        <div class="modal-body">
-          <center>
-          <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-music-player" target="_new">[P.D.M.P.]-Pimp-Daddy-Music-Player</a></p>
-          <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-crypto-chart" target="_new">[P.D.C.C.]-Pimp-Daddy-Crypto-Chart</a></p>
-          <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-landing-page" target="_new">[P.D.L.P.]-Pimp-Daddy-Landing-Page</a></p>
-          <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-link-tree" target="_new">[P.D.L.T.]-Pimp-Daddy-Link-Tree</a></p>
-          
-          <center><h2>YO PEEPS!</h2><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sjblair" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script><h4>🤘 😎 😝 </h4></center>
-  
-          </center>
+
+        <!-- Image with button -->
+        <div id="image-container">
+            <img src="images/degenback.jpg" width="100%" height="250" alt="Degen background">
+            <button id="myBtn">MY OPEN SOURCE REPOS</button>
         </div>
-        <div class="modal-footer">
-          <center>
-            <center><p>NEW TO CRYPTO BOTS? On Pionex You Can Start A Bot With As Little As $2! CLICK LOGO BELOW!</p></center>
-          <center><a href="https://accounts.pionex.us/en/signup?ref=KuOs58QN" target="NEW"> <img src="images/pionex-us-logo.png" width="125px" height="25px" alt="Sign Up For The Best Noob Friendly Crypto Trading Bot RIGHT NOW!"></a></center>
-          </center>
+
+        <div id="link-container">
+            <a href="https://cart.hostinger.com/pay/80f102c8-5488-4497-b083-6b0a0a289eee?_ga=GA1.3.942352702.1711283207"
+    target="_new">Host 100 Sites for $2.99 Per Month!</a>
         </div>
-      </div>
-    
+
+        <!-- Blog roll and Gumroad embed -->
+        <div id="content-container">
+            <div id="blog-container">
+                <button id="scroll-up">▲</button>
+                <div id="current-post"></div>
+                <button id="scroll-down">▼</button>
+            </div>
+            <div id="gumroad-container">
+                <div class="product-container" width="100%" height="100%">
+                    <h1>[PRO|CODE]</h1>
+                    <h2>Get [P.D.R.G.] Pro!</h2>
+                    <p>WYSIWYG editor, Custom branding, AI integration, and much more - Get PRO $5 one-time payment.</p>
+                    <a href="https://stevenjblair.gumroad.com/l/rkcxv" target="_new">Buy Now on Gumroad</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="social-container">
+            <a href="https://github.com/Steven-J-Blair" target="_blank" title="Follow me on GitHub">
+                <img src="images/github-icon.png" alt="GitHub" width="40" height="40">
+            </a>
+            <a href="https://x.com/Steven_J_Blair" target="_new" title="Follow me on X">
+                <img src="images/x-icon.png" alt="X" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>STAR ✨ MY REPOSITORIES! 😏</h2>
+                </div>
+                <div class="modal-body">
+                    <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-music-player" target="_new">[P.D.M.P.]-Pimp-Daddy-Music-Player</a></p>
+                    <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-crypto-chart" target="_new">[P.D.C.C.]-Pimp-Daddy-Crypto-Chart</a></p>
+                    <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-landing-page" target="_new">[P.D.L.P.]-Pimp-Daddy-Landing-Page</a></p>
+                    <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-link-tree" target="_new">[P.D.L.T.]-Pimp-Daddy-Link-Tree</a></p>
+                    <p><a href="https://github.com/Steven-J-Blair/pimp-daddy-readme-generator/" target="_new">[P.D.R.G.]-Pimp-Daddy-Readme-Generator</a></p>
+                    <p>🤘 😎 😝 </p>
+                </div>
+                <div class="modal-footer">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sjblair" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee!" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Footer -->
+        <footer>
+            <center>Copyright &copy; 2023 "S.J. Blair's [P.D.L.P.]" All Rights Reserved.</center>
+        </footer>
     </div>
-  
-    <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
-      
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      </script>
-
-    <center>
-        <div id="blog-container">
-            <div id="current-post"></div>
-            <button id="scroll-down">▼</button>
-        </div>
-    </center>
-
-    <center><footer>Copyright &copy; 2023 "S.J. Blair's [P.D.L.P.]" All Rights Reserved.</footer></center>
 
     <script src="js/script.js"></script>
 </body>
