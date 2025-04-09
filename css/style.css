@@ -7,7 +7,7 @@ body{
   background-image: cover;
   background-repeat: no-repeat;
   background-size: 100%;
-  background: linear-gradient(to bottom, rgb(97, 1, 97), black);
+  background: black;
   color: white;
   a {
     color: green; /* Set the color for links */
@@ -98,7 +98,7 @@ body{
 }
 
 /*BLOG BEGINS*/
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   #blog-container {
     width: 100%;
     height: 250px;
