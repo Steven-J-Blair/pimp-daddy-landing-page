@@ -177,6 +177,20 @@ body{
   width: 90%;
 }
 
+#content-container2 {
+  position: relative;
+  display: flex;
+  flex: 1; /* Allow the container to grow and fill the space */
+  justify-content: space-between;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 90%;
+}
+
 #blog-container {
   position: relative;
   flex: 1;
