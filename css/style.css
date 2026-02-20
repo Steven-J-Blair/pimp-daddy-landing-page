@@ -220,7 +220,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 500px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   font-family: "Roboto Mono", monospace;
@@ -268,7 +268,7 @@ body{
   display: flex;
   justify-content: center;
   align-self: center;
-  height: 164px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
   border: white solid 1px;
   width: 90%; /* Ensure it takes full width of the parent container */
 }
@@ -381,4 +381,5 @@ li {
 .post-link:hover {
   text-decoration: none;
 }
+
 
