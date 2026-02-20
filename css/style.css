@@ -268,7 +268,7 @@ body{
   display: flex;
   justify-content: center;
   align-self: center;
-  height: 600px; /* Adjust as needed */
+  height: 800px; /* Adjust as needed */
   border: white solid 1px;
   width: 90%; /* Ensure it takes full width of the parent container */
 }
@@ -381,6 +381,7 @@ li {
 .post-link:hover {
   text-decoration: none;
 }
+
 
 
 
