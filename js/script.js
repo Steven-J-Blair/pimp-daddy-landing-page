@@ -102,8 +102,7 @@ function displayPost(index) {
     
     postElement.innerHTML = `
       <div class="post-header">
-        <h5>${post.title}</h5>
-        <span class="date">${post.date}</span>
+        <h5>${post.title} <span class="date">${post.date}</span></h5>
       </div>
       <div class="content">${sanitizedContent}</div>
     </div>`;

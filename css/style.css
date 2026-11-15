@@ -159,7 +159,7 @@ body{
   margin-bottom: 1%;
   border-radius: 10px;
   overflow: hidden;
-  border: white solid 1px;
+  border: ;
   width: 90%;
 }
 
@@ -204,7 +204,7 @@ body{
   justify-content: center;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-self: auto;
   background-color: rgb(241, 241, 241);
   color: black;
@@ -268,7 +268,7 @@ body{
   display: flex;
   justify-content: center;
   align-self: center;
-  height: 150px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
   border: white solid 1px;
   width: 90%; /* Ensure it takes full width of the parent container */
 }
@@ -281,7 +281,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 0px;
-  margin-top: 0px;
+  margin-top: 0px
 }
 
 #social-container a img {
@@ -297,13 +297,13 @@ body{
   overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
 }
 
-.post-header {
-  display: top;
+.post-header .date {
+  display: inline-flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-self: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  align-self: left;
+  align-items: left;
+  text-align: left;
   margin-bottom: 0px;
 }
 
@@ -313,18 +313,10 @@ body{
   font-size: 1.2em;
 }
 
-.date {
-  display: match-parent;
-  font-style: baseline;
-  color: #666;
-  text-align: right;
-  align-self: center;
-}
-
 .content {
   font-size: 0.8em;
   line-height: 1.0;
-  text-align: center;
+  text-align: left;
 }
 
 #scroll-down, #scroll-up {
@@ -380,6 +372,14 @@ li {
 
 .post-link:hover {
   text-decoration: none;
+}
+
+
+footer {
+  text-align: center;
+  justify-content: center;
+  font-size: 9px;
+  margin-bottom: 3px;
 }
 
 
